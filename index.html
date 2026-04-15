@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atif Faisal</title>
+    <meta
+      name="description"
+      content="Portfolio of Atif Faisal — UX/UI designer and front-end developer based in London. BSc Data Science & Computing, Birkbeck University."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- CUSTOM CURSOR -->
+    <div class="cursor" aria-hidden="true"></div>
+
+    <!-- SCROLL PROGRESS -->
+    <div class="scroll-progress" aria-hidden="true"></div>
+
+    <!-- NAV -->
+    <nav aria-label="Main navigation">
+      <a href="#" class="nav-logo">Atif <span>Faisal</span></a>
+      <ul class="nav-links">
+        <li><a href="#projects">Work</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- ═══════════ HERO ═══════════ -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero-content">
+        <div class="hero-eyebrow">
+          <span class="status-dot" aria-hidden="true"></span>
+          OPEN TO OPPORTUNITIES
+        </div>
+
+        <h1 id="hero-heading">
+          UX / UI<br />
+          <em>Designer</em> &amp;<br />
+          Developer
+        </h1>
+
+        <p class="hero-sub">
+          BSc Data Science &amp; Computing student at Birkbeck, University of
+          London. I create user centred applications, from research and
+          wireframing through to coded, accessible interfaces.
+        </p>
+
+        <div class="cta-row">
+          <a href="#projects" class="btn-primary">View my work ↓</a>
+          <a href="#contact" class="btn-ghost">Get in touch</a>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <!-- Stats card -->
+        <div class="ux-card">
+          <div class="ux-card-label">At a glance</div>
+          <div class="stat-row">
+            <div class="mini-stat">
+              <div class="mini-num">3</div>
+              <div class="mini-label">Projects completed</div>
+            </div>
+            <div class="mini-stat">
+              <div class="mini-num">WCAG</div>
+              <div class="mini-label">Accessibility standard</div>
+            </div>
+            <div class="mini-stat">
+              <div class="mini-num">1st</div>
+              <div class="mini-label">Predicted degree</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skill cloud -->
+        <div class="ux-card">
+          <div class="ux-card-label">Technical skills</div>
+          <div class="skill-cloud">
+            <span class="cloud-tag">Figma</span>
+            <span class="cloud-tag">HTML / CSS</span>
+            <span class="cloud-tag">JavaScript</span>
+            <span class="cloud-tag">React</span>
+            <span class="cloud-tag">User Research</span>
+            <span class="cloud-tag">Prototyping</span>
+            <span class="cloud-tag">Adobe Colour</span>
+            <span class="cloud-tag">Python</span>
+            <span class="cloud-tag">Git</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ PROJECTS ═══════════ -->
+    <section class="section" id="projects" aria-labelledby="projects-heading">
+      <div class="section-header reveal">
+        <h2 class="section-title" id="projects-heading">Completed Work</h2>
+        <p class="section-sub">
+          Three projects demonstrating design, data, and engineering skills.
+        </p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Travel Guide -->
+        <article class="project-card">
+          <div class="project-thumb thumb-travel" aria-hidden="true">
+            <div class="thumb-grid"></div>
+            <div class="thumb-icon">🌍</div>
+            <span class="project-badge">UX / UI Design</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Travel Guide Website</h3>
+            <p class="project-desc">
+              A travel guide that works on all devices and was made from
+              scratch. It has a consistent visual style, meets WCAG
+              accessibility standards, and has interactive JS features that make
+              it easy to navigate.
+            </p>
+            <div class="project-tags">
+              <span class="tag">HTML / CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">WCAG 2.1</span>
+              <span class="tag">Adobe Colour</span>
+            </div>
+            <div class="project-highlights">
+              <span class="highlight"
+                >Colour system designed with Adobe Colour, consistent across all
+                pages</span
+              >
+              <span class="highlight"
+                >Tab switcher &amp; scroll-to-top via DOM events for intuitive
+                UX</span
+              >
+              <span class="highlight"
+                >Alt text &amp; dual navigation for full accessibility
+                compliance</span
+              >
+            </div>
+            <a
+              href="https://atiff101.github.io/travel-website/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-view-site"
+              aria-label="View Travel Guide live site (opens in new tab)"
+            >
+              <span class="btn-view-site__icon" aria-hidden="true">🌍</span>
+              View Live Site
+              <span class="btn-view-site__arrow" aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Data Viz -->
+        <article class="project-card">
+          <div class="project-thumb thumb-data" aria-hidden="true">
+            <div class="thumb-grid"></div>
+            <div class="thumb-icon">📊</div>
+            <span class="project-badge">Data Visualisation</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Climate Data Dashboard</h3>
+            <p class="project-desc">
+              Quantitative examination of fossil fuel emissions and global
+              temperature data shown in dashboard-style graphs and charts for
+              making decisions that are clear.
+            </p>
+            <div class="project-tags">
+              <span class="tag tag-blue">Python</span>
+              <span class="tag tag-blue">pandas / NumPy</span>
+              <span class="tag tag-blue">matplotlib</span>
+              <span class="tag tag-blue">Statistical Modelling</span>
+            </div>
+            <div class="project-highlights">
+              <span class="highlight"
+                >Dashboard UI designed to surface insights at a glance</span
+              >
+              <span class="highlight"
+                >Correlation &amp; regression communicated visually, not just
+                numerically</span
+              >
+              <span class="highlight"
+                >Methodology transferable to engagement analytics at scale</span
+              >
+            </div>
+          </div>
+        </article>
+
+        <!-- OOP Inventory -->
+        <article class="project-card">
+          <div class="project-thumb thumb-java" aria-hidden="true">
+            <div class="thumb-grid"></div>
+            <div class="thumb-icon">📦</div>
+            <span class="project-badge">Software Engineering</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">OOP Inventory System</h3>
+            <p class="project-desc">
+              Strong Java app that shows how to use encapsulation, inheritance,
+              and polymorphism, along with validation logic and Git-based
+              iterative growth.
+            </p>
+            <div class="project-tags">
+              <span class="tag tag-orange">Java</span>
+              <span class="tag tag-orange">OOP</span>
+              <span class="tag tag-orange">Git</span>
+              <span class="tag tag-orange">Exception Handling</span>
+            </div>
+            <div class="project-highlights">
+              <span class="highlight"
+                >Clean OOP architecture, easy to maintain and extend</span
+              >
+              <span class="highlight"
+                >Validation logic reducing invalid input errors
+                significantly</span
+              >
+              <span class="highlight"
+                >Version controlled with Git throughout iterative
+                development</span
+              >
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ═══════════ SKILLS ═══════════ -->
+    <section class="section" id="skills" aria-labelledby="skills-heading">
+      <div class="section-header reveal">
+        <h2 class="section-title" id="skills-heading">Skills</h2>
+      </div>
+
+      <div class="skills-layout">
+        <div class="skills-blocks">
+          <div class="skill-block">
+            <div class="skill-block-title">UX / Design</div>
+            <div class="skill-list">
+              <div class="skill-item">
+                <span>User Research</span>
+                <div class="skill-bar-wrap">
+                  <div class="skill-bar" style="width: 80%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span>Wireframing</span>
+                <div class="skill-bar-wrap">
+                  <div class="skill-bar" style="width: 75%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span>Prototyping</span>
+                <div class="skill-bar-wrap">
+                  <div class="skill-bar" style="width: 72%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span>Figma</span>
+                <div class="skill-bar-wrap">
+                  <div class="skill-bar" style="width: 35%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-block">
+            <div class="skill-block-title">Laguages</div>
+            <div class="skill-list">
+              <div class="skill-item">
+                <span>HTML / CSS / JavaScript / React</span>
+                <div class="skill-bar-wrap">
+                  <div class="skill-bar" style="width: 100%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span>Java</span>
+                <div class="skill-bar-wrap">
+                  <div class="skill-bar" style="width: 70%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span>SQL</span>
+                <div class="skill-bar-wrap">
+                  <div class="skill-bar" style="width: 60%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-block">
+            <div class="skill-block-title">Data &amp; Analysis</div>
+            <div class="skill-list">
+              <div class="skill-item">
+                <span>Python</span>
+                <div class="skill-bar-wrap">
+                  <div class="skill-bar" style="width: 100%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span>pandas / NumPy</span>
+                <div class="skill-bar-wrap">
+                  <div class="skill-bar" style="width: 100%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span>Data Visualisation</span>
+                <div class="skill-bar-wrap">
+                  <div class="skill-bar" style="width: 100%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span>MySQL</span>
+                <div class="skill-bar-wrap">
+                  <div class="skill-bar" style="width: 100%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-block">
+            <div class="skill-block-title">Collaboration</div>
+            <div class="skill-list">
+              <div class="skill-item">
+                <span>Git / Version Control</span>
+                <div class="skill-bar-wrap">
+                  <div class="skill-bar" style="width: 100%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span>Cross-team Comms</span>
+                <div class="skill-bar-wrap">
+                  <div class="skill-bar" style="width: 78%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span>Agile / Iterative</span>
+                <div class="skill-bar-wrap">
+                  <div class="skill-bar" style="width: 72%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- GetSociable alignment card -->
+        <div class="alignment-card">
+          <div class="align-list">
+            <div class="align-item">
+              <div class="align-icon">🎯</div>
+              <div class="align-text">
+                <strong>UX/UI principles</strong>
+                <span
+                  >Applied user focused design across all three portfolio
+                  projects, from visual identity to interaction flows.</span
+                >
+              </div>
+            </div>
+            <div class="align-item">
+              <div class="align-icon">🔬</div>
+              <div class="align-text">
+                <strong>User research &amp; usability testing</strong>
+                <span
+                  >WCAG guided accessibility implementation demonstrates
+                  research-led, evidence-based design decisions.</span
+                >
+              </div>
+            </div>
+            <div class="align-item">
+              <div class="align-icon">⚙️</div>
+              <div class="align-text">
+                <strong>HTML, CSS &amp; JavaScript fluency</strong>
+                <span
+                  >Comfortable bridging design and development, this portfolio
+                  is coded from scratch.</span
+                >
+              </div>
+            </div>
+            <div class="align-item">
+              <div class="align-icon">🤝</div>
+              <div class="align-text">
+                <strong>Cross functional collaboration</strong>
+                <span
+                  >Data Science degree develops clear communication across
+                  technical and non-technical stakeholders.</span
+                >
+              </div>
+            </div>
+            <div class="align-item">
+              <div class="align-icon">📈</div>
+              <div class="align-text">
+                <strong>Data driven design decisions</strong>
+                <span
+                  >Data analysis background uniquely supports insight driven
+                  choices. This is key to AI platforms.</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ ABOUT ═══════════ -->
+    <section class="section" id="about" aria-labelledby="about-heading">
+      <div class="section-header reveal">
+        <h2 class="section-title" id="about-heading">About Me</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm in my first year of a BSc in Data Science and Computing at
+            Birkbeck, University of London, and I'm working toward a First Class
+            degree. I love the combination of data and design, making
+            complicated information both useful and beautiful.
+          </p>
+          <p>
+            My work includes frontend UI development, Python based data
+            analysis, and object oriented software engineering, which gives me a
+            solid base to start working on projects right away.
+          </p>
+          <p>
+            I really care about making sure that everyone can use my code, that
+            it's clean, and that the user experience works for everyone.
+          </p>
+        </div>
+
+        <div class="edu-card" aria-label="Education history">
+          <div class="skill-block-title" style="margin-bottom: 0.8rem">
+            Education
+          </div>
+          <div class="edu-item">
+            <div class="edu-school">Birkbeck, University of London</div>
+            <div class="edu-detail">
+              BSc Data Science &amp; Computing · Predicted First · Sept 2024 –
+              present
+            </div>
+          </div>
+          <div class="edu-item">
+            <div class="edu-school">Oaks Park High School</div>
+            <div class="edu-detail">
+              A Level IT · Business · Mathematics · 2022–2024
+            </div>
+          </div>
+          <div class="edu-item" style="border-bottom: none; padding-bottom: 0">
+            <div class="edu-school">Key modules</div>
+            <div class="edu-detail">
+              Data Science · Programming (Python, Java, JS) · Database
+              Technology · Data Structures &amp; Algorithms · Systems Analysis
+              &amp; Design
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ CONTACT ═══════════ -->
+    <section
+      class="contact-section"
+      id="contact"
+      aria-labelledby="contact-heading"
+    >
+      <div class="contact-inner">
+        <h2 id="contact-heading">Let's work together</h2>
+        <div class="contact-links">
+          <a href="mailto:atiff101@gmail.com" class="contact-link">
+            <span aria-hidden="true">✉</span>atiff101@gmail.com
+          </a>
+          <a href="tel:07904876660" class="contact-link">
+            <span aria-hidden="true">📞</span>07904 876660
+          </a>
+          <a href="#" class="contact-link">
+            <span aria-hidden="true">📍</span>London, UK
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2026 Atif Faisal</p>
+    </footer>
+
+    <!-- External JS -->
+    <script src="main.js"></script>
+  </body>
+</html>
