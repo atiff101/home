@@ -226,6 +226,25 @@
     });
   }
 
+  // ── VIEW SITE BUTTON ──────────────────────────────────────
+  const viewSiteBtn = document.querySelector('.btn-view-site');
+
+  if (viewSiteBtn) {
+    // register with cursor expander
+    if (cursor && window.innerWidth > 900) {
+      viewSiteBtn.addEventListener('mouseenter', () => cursor.classList.add('expanded'));
+      viewSiteBtn.addEventListener('mouseleave', () => cursor.classList.remove('expanded'));
+    }
+
+    // launch animation on click (plays before navigation)
+    viewSiteBtn.addEventListener('click', () => {
+      viewSiteBtn.classList.add('launching');
+      viewSiteBtn.addEventListener('animationend', () => {
+        viewSiteBtn.classList.remove('launching');
+      }, { once: true });
+    });
+  }
+
   // ── MASTER SCROLL HANDLER ─────────────────────────────────
   function onScroll() {
     updateProgress();
